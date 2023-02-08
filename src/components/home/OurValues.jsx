@@ -19,20 +19,9 @@ const OurValues = () => {
             Get Started
           </button>
         </div>
-        <div className="flex md:grid-col-2">
+        <div className="flex">
           <div>
             <img className="w-[500px] mx-auto my-4" src={Laptop} alt="/" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <ul className="list-none">
-              <li className="text-4xl bold">Ambition</li>
-              <li className="text-4xl bold">Ambition</li>
-              <li className="text-4xl bold">Ambition</li>
-              <li className="text-4xl bold">Ambition</li>
-              <li className="text-4xl bold">Ambition</li>
-              <li className="text-4xl bold">Ambition</li>
-              <li className="text-4xl bold">Ambition</li>
-            </ul>
           </div>
         </div>
       </div>

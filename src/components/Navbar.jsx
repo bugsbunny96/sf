@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="w-1/2">
           <Link to="/">
             {/* <img src="logo.svg" alt="logo" className="w-16" /> */}
-            LOGO
+            <h1 className="w-full text-3xl font-bold text-black">LOGO</h1>
           </Link>
         </div>
         <div className="w-1/2 block lg:hidden">
@@ -33,15 +33,13 @@ const Navbar = () => {
         </div>
         <div
           className={`w-full lg:w-auto ${
-            isOpen ? 'block' : 'hidden'
+            isOpen ? "block" : "hidden"
           } lg:block lg:items-center lg:justify-end`}
         >
           <Link
             to="/services"
             className={`block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 ${
-              location.pathname === '/services'
-                ? 'font-bold text-black'
-                : ''
+              location.pathname === "/services" ? "font-bold text-black" : ""
             }`}
           >
             Services
@@ -49,9 +47,7 @@ const Navbar = () => {
           <Link
             to="/about"
             className={`block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 ${
-              location.pathname === '/about'
-                ? 'font-bold text-black'
-                : ''
+              location.pathname === "/about" ? "font-bold text-black" : ""
             }`}
           >
             About
@@ -59,9 +55,7 @@ const Navbar = () => {
           <Link
             to="/contact"
             className={`block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black ${
-              location.pathname === '/contact'
-                ? 'font-bold text-black'
-                : ''
+              location.pathname === "/contact" ? "font-bold text-black" : ""
             }`}
           >
             Contact
